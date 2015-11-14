@@ -14,8 +14,7 @@ public class ProcessAndOutputThread extends Thread{
 		int a, b, res = 0;
 		
 		while(true) {
-			/*Gets the values of the operation in the shared resource
-			 * can't be directly because the parallel processing is working*/
+		
 			aux = sharedResource.getOperation();
 			
 			a = aux.getOperating1();
