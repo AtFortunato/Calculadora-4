@@ -34,9 +34,6 @@ public class Operation {
 		this.operating2 = operating2;
 	}
 
-	/*Synchronized Method:
-	 * This method sets a operation if has no a pendant 
-	 * operation to be processed*/
 	
 	public synchronized void setOperation(int operating1, char operator, int operating2) {
 		while(!free){
@@ -55,9 +52,6 @@ public class Operation {
 		notifyAll();
 	}
 	
-	/*Synchronized Method:
-	 * This method returns a operation if has no a pendant 
-	 * operation to be processed*/
 	
 	public synchronized Operation getOperation() {
 		while(free){
